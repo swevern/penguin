@@ -16,17 +16,46 @@
             margin: 0;
             padding: 20px;
             text-align: center;
+            background-image: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(0, 0, 0, 0.1) 10px,
+                rgba(0, 0, 0, 0.1) 20px
+            );
+            background-size: 50px 50px;
         }
+
+        .background-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            z-index: -1; /* Ensures the background text stays behind the main content */
+        }
+
         .container {
-            max-width: 600px;
+            position: relative;
+            background-color: white;
+            border: 2px solid black;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1; /* Places the main content above the background text */
         }
     </style>
 </head>
 <body>
+    <div class="background-text">:3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3 :3</div>
+    
     <div class="container">
-        <p><br>Too bad, you let it get so out of hand, How much we had, finally I understand</p>
-        <p>I just saw a flying penguin! Let me tell you, it was the most majestic thing I have ever seen! I don’t feel like living because nothing will ever be as majestic as that. I never want to see again if nothing will ever be that beautiful again. I am crying now and plan on ripping my eyes out. I must go now to do that.</p>
-        <p><br>Ohh, bury my mother, pale and slight, Bury my father with his eyes shut tight, Bury my sisters two by two, and then when you're done, let's bury me tooooo!</p>
+        <p>Your text goes here</p>
     </div>
 </body>
 </html>
